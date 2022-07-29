@@ -1,4 +1,4 @@
-![banner](https://user-images.githubusercontent.com/36157933/181859177-075478bd-e97d-4be9-a65c-1afdfee0bf2f.png)
+![banner](https://user-images.githubusercontent.com/36157933/181859205-b67c5429-6a35-4ca0-8aa6-a51921522d07.png)
 
 # VARAID-VSR
 **VARAID-VSR** is a project which is forked from the project Zooming Slow-Mo 
