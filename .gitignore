@@ -1,0 +1,9 @@
+results/
+test_example/
+newvenv/
+experiments/
+data/
+dump/
+datasets/
+codes/data
+codes/models/modules/segmentation/ckpt/
