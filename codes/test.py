@@ -16,27 +16,23 @@ import utils.util as util
 import data.util as data_util
 import models.modules.Sakuya_arch as Sakuya_arch
 
-def main():
+def main(
+    model_name = 'DefaultModel',
+    model_path = '../experiments/ModelL/models/1050_G.pth',
+    test_dataset_folder = '../test_example/PracticalTests/36_30FPS/frames/holder',
+    save_folder = '../test_example/PracticalTests/36_30FPS/DefaultModel',
+):
     scale = 4
     N_ot =5 #3
     N_in = 1+ N_ot // 2
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
-    MODEL_NAME = "modell"
     #### model 
     #### TODO: change your model path here
-    model_path = '../experiments/ModelL/models/1050_G.pth'
     model = Sakuya_arch.LunaTokis(64, N_ot, 8, 5, 40)
 
     #### dataset
     data_mode = 'Custom' #'Vid4' #'SPMC'#'Middlebury'#
-
-    if data_mode == 'Vid4':
-        test_dataset_folder = '/data/xiang/SR/Vid4/LR/*'
-    if data_mode == 'SPMC':
-        test_dataset_folder = '/data/xiang/SR/spmc/*'
-    if data_mode == 'Custom':
-        test_dataset_folder = '../test_example/PracticalTests/36_30FPS/frames/*' # TODO: put your own data path here
 
     #### evaluation
     flip_test = False #True#
@@ -46,12 +42,14 @@ def main():
     padding = 'replicate'
     save_imgs = True #True#
     if 'Custom' in data_mode: save_imgs = True
+
     ############################################################################
     if torch.cuda.is_available():
         device = torch.device('cuda') 
     else:
         device = torch.device('cpu')
-    save_folder = '../test_example/PracticalTests/36_30FPS/{}'.format(MODEL_NAME)
+
+    save_folder = '../test_example/PracticalTests/36_30FPS/{}'.format(model_name)
     util.mkdirs(save_folder)
     util.setup_logger('base', save_folder, 'test', level=logging.INFO, screen=True, tofile=True)
     logger = logging.getLogger('base')
@@ -98,7 +96,7 @@ def main():
     # for each sub-folder
     for sub_folder in sub_folder_l:
         gt_tested_list = []
-        sub_folder_name = sub_folder.split('/')[-1]
+        sub_folder_name = sub_folder.split('/')[-1]+'_vsr'
         sub_folder_name_l.append(sub_folder_name)
         save_sub_folder = osp.join(save_folder, sub_folder_name)
 
