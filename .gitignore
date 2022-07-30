@@ -7,3 +7,4 @@ dump/
 datasets/
 codes/data
 codes/models/modules/segmentation/ckpt/
+ckpt/
