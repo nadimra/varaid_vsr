@@ -23,3 +23,5 @@ codes/data/FootballVids_train_keys.pkl
 ckpts/
 codes/models/modules/DCNv2/build/
 codes/models/modules/DCNv2/DCNv2.egg-info
+codes/models/modules/DCNv2/*.so
+*.pyc

@@ -3,10 +3,15 @@ import functools
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import models.modules.module_util as mutil
-from models.modules.convlstm import ConvLSTM, ConvLSTMCell
+
+from . import module_util as mutil
+#import models.modules.module_util as mutil
+
+from .convlstm import ConvLSTM, ConvLSTMCell
+#from models.modules.convlstm import ConvLSTM, ConvLSTMCell
 try:
-    from models.modules.DCNv2.dcn_v2 import DCN_sep
+    from .DCNv2.dcn_v2 import DCN_sep
+    #from models.modules.DCNv2.dcn_v2 import DCN_sep
 except ImportError:
     raise ImportError('Failed to import DCNv2 module.')
 

@@ -12,15 +12,19 @@ import numpy as np
 import cv2
 import torch
 
-import utils.util as util
-import data.util as data_util
-import models.modules.Sakuya_arch as Sakuya_arch
+from .utils import util
+from .data import util as data_util
+from .models.modules import Sakuya_arch
+
+#import utils.util as util
+#import data.util as data_util
+#import models.modules.Sakuya_arch as Sakuya_arch
 
 def main(
     model_name = 'DefaultModel',
-    model_path = '../experiments/ModelL/models/1050_G.pth',
-    test_dataset_folder = '../test_example/PracticalTests/36_30FPS/frames/holder',
-    save_folder = '../test_example/PracticalTests/36_30FPS/DefaultModel',
+    model_path = '../ckpts/ModelI.pth',
+    test_dataset_folder = '../test_example/holder',
+    save_folder = '../test_example/',
 ):
     scale = 4
     N_ot =5 #3
