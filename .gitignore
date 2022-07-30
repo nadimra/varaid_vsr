@@ -20,3 +20,6 @@ codes/data/FootballVids_train_keys_2.pkl
 codes/data/FootballVids_train_keys.pkl
 
 
+ckpts/
+codes/models/modules/DCNv2/build/
+codes/models/modules/DCNv2/DCNv2.egg-info
