@@ -49,7 +49,6 @@ def main(
     else:
         device = torch.device('cpu')
 
-    save_folder = '../test_example/PracticalTests/36_30FPS/{}'.format(model_name)
     util.mkdirs(save_folder)
     util.setup_logger('base', save_folder, 'test', level=logging.INFO, screen=True, tofile=True)
     logger = logging.getLogger('base')
@@ -96,7 +95,7 @@ def main(
     # for each sub-folder
     for sub_folder in sub_folder_l:
         gt_tested_list = []
-        sub_folder_name = sub_folder.split('/')[-1]+'_vsr'
+        sub_folder_name = sub_folder.split('/')[-1]+'_vsr_{}'.format(model_name)
         sub_folder_name_l.append(sub_folder_name)
         save_sub_folder = osp.join(save_folder, sub_folder_name)
 
