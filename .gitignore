@@ -5,9 +5,8 @@ experiments/
 data/
 dump/
 datasets/
+
 codes/models/modules/segmentation/ckpt/
-
-
 codes/data/playervids_train_LR.lmdb
 codes/data/playervids_train_HR.lmdb
 codes/data/footballvids_train_LR_x8.lmdb
