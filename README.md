@@ -1,7 +1,7 @@
 ![banner](https://user-images.githubusercontent.com/36157933/181859205-b67c5429-6a35-4ca0-8aa6-a51921522d07.png)
 
 # VARAID-VSR
-**VARAID-VSR** is a project which is forked from the project [Zooming Slow-Mo](https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020). We add further adjustments in this forked project, such as segmentation integration during training to better cater for Football broadcasts. We also trained this network on our *FootballVids* and *PlayerVids* dataset.  
+This project is part of a submodule of the [VARAID](https://github.com/nadimra/project-varaid) project.**VARAID-VSR** is a project which is forked from the project [Zooming Slow-Mo](https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020). We add further adjustments in this forked project, such as segmentation integration during training to better cater for Football broadcasts. We also trained this network on our *FootballVids* and *PlayerVids* dataset.  
 
 # Setup
 ##### Initial Setup
