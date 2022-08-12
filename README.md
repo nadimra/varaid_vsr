@@ -33,6 +33,10 @@ test.py
 ##### Training
 Training documentation not available.
 
+# Samples
+![sota-eval-gif-side-zoom-original](https://user-images.githubusercontent.com/36157933/184440095-1f8e0985-7a1c-4bd5-a990-62b0cdb826bc.gif)
+
+
 # Acknowledgements
 This code is built on [Zooming Slow-Mo](https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020). We also utilise [Semantic Segmentation on MIT ADE20K](https://github.com/CSAILVision/semantic-segmentation-pytorch) to aid the training phase. We thank the authors for sharing their codes. 
 
