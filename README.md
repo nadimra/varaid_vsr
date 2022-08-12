@@ -34,9 +34,15 @@ test.py
 Training documentation not available.
 
 # Samples
+The left images are the upscaled LR images which have been set to half the frame rate. The right images are the HR images produced by our final model.
+
 ![sota-eval-gif-1-side-zoom-original](https://user-images.githubusercontent.com/36157933/184448457-19b0302f-53eb-4ba1-890f-20ae6e05cd6f.gif)
 
 ![sota-eval-gif-2-side-zoom-original](https://user-images.githubusercontent.com/36157933/184447451-c5f7b30b-036d-4ee9-b3e9-b1a4a22a5a94.gif)
+
+![sota-eval-gif-3-side-zoom-original](https://user-images.githubusercontent.com/36157933/184450620-846ec98b-9904-49cc-bddb-efde5ea080be.gif)
+
+![sota-eval-gif-4-side-zoom-original](https://user-images.githubusercontent.com/36157933/184452324-75187e93-4dbc-4fcd-82b3-e3c4e9211f6a.gif)
 
 
 # Acknowledgements
