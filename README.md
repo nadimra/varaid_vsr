@@ -34,7 +34,9 @@ test.py
 Training documentation not available.
 
 # Samples
-![sota-eval-gif-side-zoom-original](https://user-images.githubusercontent.com/36157933/184440095-1f8e0985-7a1c-4bd5-a990-62b0cdb826bc.gif)
+![sota-eval-gif-1-side-zoom-original](https://user-images.githubusercontent.com/36157933/184448457-19b0302f-53eb-4ba1-890f-20ae6e05cd6f.gif)
+
+![sota-eval-gif-2-side-zoom-original](https://user-images.githubusercontent.com/36157933/184447451-c5f7b30b-036d-4ee9-b3e9-b1a4a22a5a94.gif)
 
 
 # Acknowledgements
