@@ -34,6 +34,8 @@ test.py
 Training documentation not available.
 
 # Samples
+
+#### Samples of our STVSR model
 The left images are the upscaled LR images which have been set to half the frame rate. The right images are the HR images produced by our final model.
 
 ![sota-eval-gif-1-side-zoom-original](https://user-images.githubusercontent.com/36157933/184448457-19b0302f-53eb-4ba1-890f-20ae6e05cd6f.gif)
@@ -44,6 +46,10 @@ The left images are the upscaled LR images which have been set to half the frame
 
 ![sota-eval-gif-4-side-zoom-original](https://user-images.githubusercontent.com/36157933/184452324-75187e93-4dbc-4fcd-82b3-e3c4e9211f6a.gif)
 
+#### Effects of our STVSR model for object detection
+The left images are the upscaled LR images. The right images are the HR images produced by our final model. We apply both sets of images to the YOLOv5 object detector to detect the ball objects.
+
+![object-detection-stvsr-comparison](https://user-images.githubusercontent.com/36157933/184502015-df3d4ba4-d541-4c9a-8fdc-02c77a3a786b.gif)
 
 # Acknowledgements
 This code is built on [Zooming Slow-Mo](https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020). We also utilise [Semantic Segmentation on MIT ADE20K](https://github.com/CSAILVision/semantic-segmentation-pytorch) to aid the training phase. We thank the authors for sharing their codes. 
