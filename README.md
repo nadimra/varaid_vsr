@@ -51,6 +51,11 @@ The left images are the upscaled LR images. The right images are the HR images p
 
 ![object-detection-stvsr-comparison](https://user-images.githubusercontent.com/36157933/184502015-df3d4ba4-d541-4c9a-8fdc-02c77a3a786b.gif)
 
+#### Effects of our STVSR model for human pose estimation
+The left images are the upscaled LR images. The right images are the HR images produced by our final model. We apply both sets of images to the HRNET pose estimation network.
+
+![hrnet-stvsr-comparison](https://user-images.githubusercontent.com/36157933/184510729-44c0bead-55d5-434c-8fe9-50f2335e3c41.gif)
+
 # Acknowledgements
 This code is built on [Zooming Slow-Mo](https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020). We also utilise [Semantic Segmentation on MIT ADE20K](https://github.com/CSAILVision/semantic-segmentation-pytorch) to aid the training phase. We thank the authors for sharing their codes. 
 
