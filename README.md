@@ -21,7 +21,7 @@ export CUDNN_LIB_DIR=/vol/cuda/11.1.0-cudnn8.0.4.30/lib64
 5. Navigate to `/codes/models/modules/DCNv2` and run `bash make.sh`
 
 ##### Model Setup
-6. Create a folder `ckpts` within the root directory and place your model paths here. The trained models for this project can be found here.
+6. Create a folder `ckpts` within the root directory and place your model paths here. The trained models for this project can be found in our [Model Zoo](https://drive.google.com/drive/folders/1F7rasOfAcyCeoxXXcAT9fox6niaijrG_?usp=sharing).
 
 # How to use
 ##### Testing
