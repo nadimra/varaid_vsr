@@ -34,7 +34,7 @@ def main(
 
     #### model 
     #### TODO: change your model path here
-    if scale == 2:
+    if scale == 4:
         model = Sakuya_arch.LunaTokis(64, N_ot, 8, 5, 40)
     else: 
         model = Sakuya_arch_x2.LunaTokis(64, N_ot, 8, 5, 40)
