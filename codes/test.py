@@ -15,6 +15,7 @@ import torch
 from .utils import util
 from .data import util as data_util
 from .models.modules import Sakuya_arch
+from .models.modules import Sakuya_arch_x2
 
 #import utils.util as util
 #import data.util as data_util
@@ -25,15 +26,18 @@ def main(
     model_path = '../ckpts/ModelI.pth',
     test_dataset_folder = '../test_example/holder',
     save_folder = '../test_example/',
+    scale = 4,
 ):
-    scale = 4
     N_ot =5 #3
     N_in = 1+ N_ot // 2
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
     #### model 
     #### TODO: change your model path here
-    model = Sakuya_arch.LunaTokis(64, N_ot, 8, 5, 40)
+    if scale == 2:
+        model = Sakuya_arch.LunaTokis(64, N_ot, 8, 5, 40)
+    else: 
+        model = Sakuya_arch_x2.LunaTokis(64, N_ot, 8, 5, 40)
 
     #### dataset
     data_mode = 'Custom' #'Vid4' #'SPMC'#'Middlebury'#
